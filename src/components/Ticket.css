@@ -1,0 +1,91 @@
+.ticket-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: Arial, sans-serif;
+  width: 500px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 18px !important;
+}
+
+.ticket-id {
+  font-size: 0.85rem;
+  color: #6c757d;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.ticket-user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #dcdcdc;
+}
+
+.ticket-title {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #212529;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.ticket-priority-tag {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.priority-icon {
+  margin: 0;
+  padding: 0; /* Remove padding to ensure square shape */
+  width: 23px; /* Set a fixed width */
+  height: 23px; /* Set height equal to width to make it square */
+  border-radius: 2px; /* Optional, keeps slightly rounded corners; set to 0 for sharp corners */
+  background-color: #fbfbfb;
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(108, 117, 125, 0.2); /* Optional shadow */
+}
+
+.ticket-tag {
+  color: #6c757d;
+}
+
+.ticket-type {
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: 2px;
+  background-color: #fbfbfb;
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  width: fit-content;
+  box-shadow: 0px 2px 4px rgba(108, 117, 125, 0.2);
+}
+
+.dot {
+  font-size: 200px; /* Increase the size of the dot */
+  color: #6c757d; /* Optional: Adjust the color */
+  vertical-align: middle; /* Aligns the dot vertically with the text */
+}
+
+

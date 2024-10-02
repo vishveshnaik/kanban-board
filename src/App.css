@@ -1,0 +1,121 @@
+.app {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.kanban-column {
+  padding: 10px;
+  width: 25%;
+  border-radius: 8px;
+  min-height: 300px;
+}
+
+.kanban-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.ticket-card {
+  background-color: #fff;
+  border: 1px solid #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.ticket-title {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.ticket-tag {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.ticket-user {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Updated container for the selector with navbar styling */
+.grouping-selector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  width: 100%; 
+  background-color: #f4f4f4; /* Light gray background for the navbar */
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.2); /* Subtle shadow only at the bottom */
+}
+
+/* Button to toggle the display of options */
+.grouping-selector button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #eff0f2;
+  color: black;
+  border: solid 1px black;
+  margin: 10px 10px; /* Adjust margin to fit inside the navbar styling */
+}
+
+/* Updated options pop-up styling */
+.grouping-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap:2px; /* Increase gap between Grouping and Ordering sections */
+  padding: 15px 15px 2px 10px; /* Increase padding to make the box bigger */
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Set a fixed width to make the box wider */
+  z-index: 100;
+}
+
+/* Grouping and ordering option styling */
+.option-group {
+  display: flex;
+  align-items: center;
+  gap: 150px; /* Increase the gap between Label and Select dropdown */
+  margin-bottom: 20px; /* Add space between Grouping and Ordering groups */
+}
+
+/* Increase font size for the labels */
+.option-group label {
+  font-size: 1.2rem; /* Increase the font size for names like "Grouping" and "Ordering" */
+  font-weight: bold; 
+  color: grey;
+}
+
+.option-group select {
+  padding: 6px 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 17px; /* Increase font size */
+  color: black;
+}
+
+/* General button hover effect */
+button:hover {
+  background-color: #e8e8e8;
+}
